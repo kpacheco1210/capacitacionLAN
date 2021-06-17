@@ -1,0 +1,279 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7182183800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Como cliente ingreso a la url \"https://www.latamairlines.com/cl/es\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.latamairlines.com/cl/es",
+                  "offset": 31
+                }
+              ],
+              "location": "Test.comoClienteIngresoALaUrl(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3692116000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "escojo un vuelo mas economico, escojo asientos y adicionales.",
+        "description": "",
+        "id": "escojo-un-vuelo-con-el-precio-mas-economico--escojo-los-asientos-y-los-adicionales-de-cabina.;escojo-un-vuelo-mas-economico--escojo-asientos-y-adicionales.",
+        "after": [
+          {
+            "result": {
+              "duration": 1281263400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15369876700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "escojo la ruta y la fecha",
+            "match": {
+              "location": "Test.escojo_la_ruta_y_la_fecha()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11645002100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "valido el horario y la tarifa light de ida",
+            "match": {
+              "location": "Test.valido_el_horario_y_la_tarifa_light_de_ida()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15689324600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "valido el horario y la tarifa light de vuelta",
+            "match": {
+              "location": "Test.valido_el_horario_y_la_tarifa_light_de_vuelta()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43286692600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "selecciono un asiento de ida y uno de vuelta",
+            "match": {
+              "location": "Test.selecciono_un_asiento_de_ida_y_uno_de_vuelta()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2629384400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "selecciono un maleta adicional",
+            "match": {
+              "location": "Test.selecciono_un_maleta_adicional()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22293373200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Se muestra el formulario para completar.",
+            "match": {
+              "location": "Test.se_muestra_el_formulario_para_completar()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PrimerTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7021570500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Como cliente ingreso a la url \"https://www.latamairlines.com/cl/es\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.latamairlines.com/cl/es",
+                  "offset": 31
+                }
+              ],
+              "location": "Test.comoClienteIngresoALaUrl(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1556427300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "escojo un vuelo de solo ida, elijo asientos y adicionales.",
+        "description": "",
+        "id": "escojo-un-vuelo-con-el-precio-mas-economico--escojo-los-asientos-y-los-adicionales-de-cabina.;escojo-un-vuelo-de-solo-ida--elijo-asientos-y-adicionales.",
+        "after": [
+          {
+            "result": {
+              "duration": 908786500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16046165100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Elijo la ruta y la fecha de vuelo de solo ida",
+            "match": {
+              "location": "Test.elijo_la_ruta_y_la_fecha_de_vuelo_de_solo_ida()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24128651699,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Valido el horario y la tarifa del vuelo",
+            "match": {
+              "location": "Test.valido_el_horario_y_la_tarifa_del_vuelo()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31291574100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Selecciono un asiento en la salida de emergencia",
+            "match": {
+              "location": "Test.selecciono_un_asiento_en_la_salida_de_emergencia()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2375477100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Selecciono una 1 maletas adicionales",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                }
+              ],
+              "location": "Test.selecciono_una_maletas_adicionales(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23335592600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Se muestra el formulario para completar.",
+            "match": {
+              "location": "Test.se_muestra_el_formulario_para_completar()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SegundoTest"
+          }
+        ]
+      }
+    ],
+    "name": "escojo un vuelo con el precio mas economico, escojo los asientos y los adicionales de cabina.",
+    "description": "",
+    "id": "escojo-un-vuelo-con-el-precio-mas-economico--escojo-los-asientos-y-los-adicionales-de-cabina.",
+    "keyword": "Feature",
+    "uri": "src/test/java/Lan/test.feature",
+    "tags": []
+  }
+]

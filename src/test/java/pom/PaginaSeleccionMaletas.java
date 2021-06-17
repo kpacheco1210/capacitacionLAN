@@ -16,13 +16,13 @@ public class PaginaSeleccionMaletas extends BasePage{
     @FindBy(xpath = "(//*[contains(@aria-label,'Eliminar')]) [1]")
     WebElement eliminarMaleta15kg;
 
-    @FindBy(xpath = "(//*[contains(@aria-label,'Agregar')]) [1]")
+    @FindBy(css = "button[id*='add-15']")
     WebElement agregarMaleta15kg;
 
     @FindBy(xpath = "(//*[contains(@aria-label,'Eliminar')]) [2]")
     WebElement eliminarMaleta32kg;
 
-    @FindBy(xpath = "(//*[contains(@aria-label,'Agregar')]) [2]")
+    @FindBy(xpath = "//*[contains(@aria-label,'Agregar')] ")
     WebElement agregarMaleta32kg;
 
     @FindBy(xpath = "//*[contains(text(),'Continuar')]")

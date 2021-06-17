@@ -31,6 +31,8 @@ public class PaginaSeleccionDeAsientos extends BasePage{
     @FindBy(xpath = "//*[contains(text(),'Eliminar o cambiar asiento')]")
     WebElement eliminarAsiento;
 
+    @FindBy(xpath = "//span[contains(text(),'Cumplo con los requisitos')]")
+    WebElement btnConfirmarAsientoEmergencia;
     //button[data-zone='FRONT_SEATS']
 
     // Metodos
@@ -39,6 +41,7 @@ public class PaginaSeleccionDeAsientos extends BasePage{
         waitFor(8);
         String tipoDeAsiento = tipo;
 
+        System.out.println("asiento");
         if (asientosDisponibles.size()==0) {
             waitFor(1);
             asientosDisponibles = driver.findElements(By.xpath("//div[contains(@class,'deBhoE')][button]"));
@@ -73,6 +76,10 @@ public class PaginaSeleccionDeAsientos extends BasePage{
         waitFor(2);
     }
 
+    public void clickBtnConfirmarAsientoEmergencia(){
+        waitFor(1);
+        btnConfirmarAsientoEmergencia.click();
+    }
 
 
 

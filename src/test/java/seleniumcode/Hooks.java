@@ -28,11 +28,7 @@ public class Hooks {
 
     @After
     public void tearDown(){
-        System.out.println("* -> FINISH");
-        //driver.quit();
-
-
-
+        driver.quit();
     }
 
 

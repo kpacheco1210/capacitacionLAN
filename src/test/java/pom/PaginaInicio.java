@@ -51,14 +51,17 @@ public class PaginaInicio extends BasePage{
     }
 
     public void seleccionarVueloSoloIda(){
+        waitFor(2);
         opcionTipoDeViaje.click();
         waitFor(1);
-        if (isVisible(cerrarSurvey))
-            cerrarSurvey.click();
-        driver.findElement(By.xpath("//span[contains(text(),'Solo ida')]")).click();
+        // *-***** button[id*='btnTripType0']
+        driver.findElement(By.xpath("//span[contains(text(),'Solo ida')] [1]")).click();
     }
 
     public void seleccionarOrigen(String texto){
+        waitFor(1);
+        inputDestino.click();
+        waitFor(1);
         inputOrigen.click();
         waitFor(4);
         inputOrigen.sendKeys(texto);
@@ -81,6 +84,8 @@ public class PaginaInicio extends BasePage{
         waitFor(1);
         inputFechaIda.click();
         waitFor(1);
+        if(diasDisponibles.size()==0)
+            driver.findElements(By.cssSelector("td[aria-disabled='false']"));
         WebElement diaElegido = diasDisponibles.get(nroDiaDisponible-1);
         diaElegido.click();
     }

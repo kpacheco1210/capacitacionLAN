@@ -4,6 +4,12 @@ report.generate({
     jsonDir: './test/report',
     reportPath: './test/report',
     openReportInBrowser: true,
+    pageTitle: "Reporte pagina vuelos LAN",
+    reportName: "Proyecto CapacitacionLAN",
+    displayDuration: true,
+    durationInMS: true,
+    displayReportTime: true,
+
     metadata:{
         browser: {
             name: 'chrome',
