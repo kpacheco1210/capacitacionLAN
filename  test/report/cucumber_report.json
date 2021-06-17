@@ -1,0 +1,277 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7234913400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Como cliente ingreso a la url \"https://www.latamairlines.com/cl/es\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.latamairlines.com/cl/es",
+                  "offset": 31
+                }
+              ],
+              "location": "Test.comoClienteIngresoALaUrl(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3617712500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "escojo un vuelo mas economico, escojo asientos y adicionales.",
+        "description": "",
+        "id": "escojo-un-vuelo-con-el-precio-mas-economico--escojo-los-asientos-y-los-adicionales-de-cabina.;escojo-un-vuelo-mas-economico--escojo-asientos-y-adicionales.",
+        "after": [
+          {
+            "result": {
+              "duration": 864829100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14742397700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": ": escojo la ruta y la fecha",
+            "match": {
+              "location": "Test.escojo_la_ruta_y_la_fecha()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10705458300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": ": valido el horario y la tarifa light de ida",
+            "match": {
+              "location": "Test.valido_el_horario_y_la_tarifa_light_de_ida()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d91.0.4472.106)\nBuild info: version: \u00274.0.0-alpha-1\u0027, revision: \u0027d1d3728cae\u0027, time: \u00272019-04-24T13:42:21\u0027\nSystem info: host: \u0027AR-NB-544\u0027, ip: \u0027192.168.0.10\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\\Users\\KEVIN~1.PAC\\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0cb8e42f321d402191f7209591847cd8\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat pom.PaginaVuelosDisponibles.clickEnBtnContinuar(PaginaVuelosDisponibles.java:132)\r\n\tat seleniumcode.Test.valido_el_horario_y_la_tarifa_light_de_vuelta(Test.java:115)\r\n\tat ✽.: valido el horario y la tarifa light de vuelta(src/test/java/Lan/test.feature:13)\r\n",
+              "duration": 13602348800,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": ": valido el horario y la tarifa light de vuelta",
+            "match": {
+              "location": "Test.valido_el_horario_y_la_tarifa_light_de_vuelta()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": ": selecciono un asiento de ida y uno de vuelta",
+            "match": {
+              "location": "Test.selecciono_un_asiento_de_ida_y_uno_de_vuelta()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": ": selecciono un maleta adicional",
+            "match": {
+              "location": "Test.selecciono_un_maleta_adicional()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": ": Se muestra el formulario para completar.",
+            "match": {
+              "location": "Test.se_muestra_el_formulario_para_completar()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PrimerTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7014196200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Como cliente ingreso a la url \"https://www.latamairlines.com/cl/es\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.latamairlines.com/cl/es",
+                  "offset": 31
+                }
+              ],
+              "location": "Test.comoClienteIngresoALaUrl(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1726530000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "escojo un vuelo de solo ida, elijo asientos y adicionales.",
+        "description": "",
+        "id": "escojo-un-vuelo-con-el-precio-mas-economico--escojo-los-asientos-y-los-adicionales-de-cabina.;escojo-un-vuelo-de-solo-ida--elijo-asientos-y-adicionales.",
+        "after": [
+          {
+            "result": {
+              "duration": 911623100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14068170900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Elijo la ruta y la fecha de vuelo de solo ida",
+            "match": {
+              "location": "Test.elijo_la_ruta_y_la_fecha_de_vuelo_de_solo_ida()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 75300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Valido el horario y la tarifa del vuelo",
+            "match": {
+              "location": "Test.valido_el_horario_y_la_tarifa_del_vuelo()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Selecciono un asiento en la salida de emergencia",
+            "match": {
+              "location": "Test.selecciono_un_asiento_en_la_salida_de_emergencia()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 963300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Selecciono una 2 maletas adicionales",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 15
+                }
+              ],
+              "location": "Test.selecciono_una_maletas_adicionales(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Se muestra el formulario para rellenar.",
+            "match": {
+              "location": "Test.se_muestra_el_formulario_para_rellenar()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SegundoTest"
+          }
+        ]
+      }
+    ],
+    "name": "escojo un vuelo con el precio mas economico, escojo los asientos y los adicionales de cabina.",
+    "description": "",
+    "id": "escojo-un-vuelo-con-el-precio-mas-economico--escojo-los-asientos-y-los-adicionales-de-cabina.",
+    "keyword": "Feature",
+    "uri": "src/test/java/Lan/test.feature",
+    "tags": []
+  }
+]

@@ -35,24 +35,20 @@ public class PaginaSeleccionDeAsientos extends BasePage{
 
     // Metodos
 
-    public void elegirAsiento(){
+    public void elegirAsiento(String tipo){
         waitFor(8);
-        String tipoDeAsiento = "Ventana";
+        String tipoDeAsiento = tipo;
 
-        System.out.println(asientosDisponibles.size());
         if (asientosDisponibles.size()==0) {
             waitFor(1);
             asientosDisponibles = driver.findElements(By.xpath("//div[contains(@class,'deBhoE')][button]"));
         }
-       // System.out.println("Muestro cantidad de asientos: " + asientosDisponibles.size());
+
         waitFor(5);
         for (WebElement asiento :asientosDisponibles) {
             asiento.click();
             String textoAsiento = asiento.getText();
-        //    System.out.println("El texto muestra esto" + textoAsiento);
-            System.out.println("***");
             if (textoAsiento.contains(tipoDeAsiento)){
-        //        System.out.println("Encontre asiento, le hago click.");
                 eliminarAsiento.click();
                 waitFor(1);
                 asiento.click();

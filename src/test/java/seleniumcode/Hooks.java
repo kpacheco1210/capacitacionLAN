@@ -24,14 +24,14 @@ public class Hooks {
         //options.addArguments("--headless","--window-size=2000,2080","--ignore-certificate-errors");
         ChromeOptions chromeOptions = options.setPageLoadStrategy(PageLoadStrategy.NONE);
         driver = new ChromeDriver(options);
-
-
     }
 
     @After
     public void tearDown(){
-        System.out.println("\nAll done -");
+        System.out.println("* -> FINISH");
         //driver.quit();
+
+
 
     }
 

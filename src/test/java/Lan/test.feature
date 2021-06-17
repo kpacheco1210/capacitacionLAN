@@ -19,8 +19,8 @@ Background:
 
   @SegundoTest
   Scenario: escojo un vuelo de solo ida, elijo asientos y adicionales.
-    Given Elijo la ruta y la fecha de vuelo de ida
-    When Valido el horario y la tarifa del vuelo
+    Given Elijo la ruta y la fecha de vuelo de solo ida
+    When Valido el horario y la tarifa del vuelo premium
     And Selecciono un asiento en la salida de emergencia
     And Selecciono una 2 maletas adicionales
     Then Se muestra el formulario para rellenar.

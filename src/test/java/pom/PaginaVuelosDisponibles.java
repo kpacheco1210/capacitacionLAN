@@ -39,10 +39,10 @@ public class PaginaVuelosDisponibles extends BasePage{
     WebElement cerrarSurvey;
 
 
-    @FindBy(css = "ol[aria-label='Vuelos disponibles.'] li")
+    @FindBy(css = "ol[aria-label='Vuelos disponibles.'] li.cfVFEa")
     List<WebElement> vuelosDisponibles;
 
-    @FindBy(css = "ol[aria-label='Tarifas disponibles.'] li.sc-jbWsrJ")
+    @FindBy(css = "ol[aria-label='Tarifas disponibles.'] li[id*='WrapperBundleCardbundle-detail']")
     List<WebElement> tarifasDisponibles;
 
     // --- //*[@id='button9']  ---
@@ -94,15 +94,15 @@ public class PaginaVuelosDisponibles extends BasePage{
     }
 
     public void seleccionarVueloMasEconomico(){
-        waitFor(4);
-        System.out.println(vuelosDisponibles.size());
+        waitFor(5);
         if (vuelosDisponibles.size()==0) {
             waitFor(1);
             vuelosDisponibles = driver.findElements(By.cssSelector("ol[aria-label='Vuelos disponibles.'] li"));
         }
         for (WebElement vuelo :vuelosDisponibles) {
             if(vuelo.getText().contains("Más económico")) {
-                waitFor(1);
+                System.out.println("Vuelo seleccionado, queda elegir tarifa.");
+                waitFor(2);
                 vuelo.click();
                 break;
             }
@@ -116,10 +116,11 @@ public class PaginaVuelosDisponibles extends BasePage{
         waitFor(2);
         if (tarifasDisponibles.size()==0) {
             waitFor(1);
-            tarifasDisponibles = driver.findElements(By.cssSelector("ol[aria-label='Vuelos disponibles.'] li"));
+            tarifasDisponibles = driver.findElements(By.cssSelector("ol[aria-label='Tarifas disponibles.'] li[id*='WrapperBundleCardbundle-detail']"));
         }
         for (WebElement tarifa :tarifasDisponibles) {
             if(tarifa.getText().contains("light")) {
+                System.out.println("Tarifas seleccionada.");
                 tarifa.click();
                 break;
             }

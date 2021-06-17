@@ -1,5 +1,6 @@
 package pom;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -39,6 +40,9 @@ public class PaginaInicio extends BasePage{
     @FindBy(css = "div[aria-label='Survey'] button")
     WebElement cerrarSurvey;
 
+    @FindBy(css = "button[id*='btnTripTypeCTA']")
+    WebElement opcionTipoDeViaje;
+
     // Metodos
 
     public void inicio(){
@@ -46,16 +50,27 @@ public class PaginaInicio extends BasePage{
         waitFor(7);
     }
 
+    public void seleccionarVueloSoloIda(){
+        opcionTipoDeViaje.click();
+        waitFor(1);
+        if (isVisible(cerrarSurvey))
+            cerrarSurvey.click();
+        driver.findElement(By.xpath("//span[contains(text(),'Solo ida')]")).click();
+    }
+
     public void seleccionarOrigen(String texto){
+        inputOrigen.click();
         waitFor(4);
         inputOrigen.sendKeys(texto);
         if (isVisible(cerrarSurvey))
             cerrarSurvey.click();
+        waitFor(1);
         primeraSugerencia.click();
     }
 
     public void seleccionarDestino(String texto){
         inputDestino.click();
+        waitFor(1);
         inputDestino.sendKeys(texto);
         waitFor(1);
         primeraSugerencia.click();
@@ -66,7 +81,6 @@ public class PaginaInicio extends BasePage{
         waitFor(1);
         inputFechaIda.click();
         waitFor(1);
-
         WebElement diaElegido = diasDisponibles.get(nroDiaDisponible-1);
         diaElegido.click();
     }
@@ -78,7 +92,6 @@ public class PaginaInicio extends BasePage{
     }
 
     public void realizarBusqueda(){
-        waitFor(4);
         btnBuscar.click();
     }
 

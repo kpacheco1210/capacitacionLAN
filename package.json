@@ -1,0 +1,18 @@
+{
+  "name": "capacitacionlan",
+  "version": "1.0.0",
+  "description": "capacitacion java cucumber",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "report": "node index.js"
+  },
+  "author": "kevinpacheco",
+  "license": "ISC"
+}
